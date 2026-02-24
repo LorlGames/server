@@ -150,12 +150,12 @@ setInterval(() => {
   });
 }, 30000);
 
-server.listen(PORT, () => {
+server.listen(PORT, '0.0.0.0', () => {
   console.log(`
 ╔═══════════════════════════════════════╗
-║       Lorl Server Host (Node.js)      ║
+║       LORL Server Host (Node.js)      ║
 ╠═══════════════════════════════════════╣
-║  Listening on  ws://localhost:${PORT.toString().padEnd(6)} ║
+║  Listening on  ws://YOUR-IP:${PORT.toString().padEnd(6)} ║
 ║  Max players   ${MAX_PLAYERS.toString().padEnd(23)} ║
 ╚═══════════════════════════════════════╝
   `);
